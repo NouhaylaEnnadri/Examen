@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Examen
 {
-    internal class vrai_faux
+    internal class vrai_faux : reponse 
     {
     }
 }

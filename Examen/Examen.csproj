@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="dichotomique.cs" />
+    <Compile Include="Q_dichotomique.cs" />
     <Compile Include="etudiant.cs" />
     <Compile Include="examen.cs" />
     <Compile Include="Q_ouverte.cs" />
-    <Compile Include="Proposition.cs" />
+    <Compile Include="R_Proposition.cs" />
     <Compile Include="QCM.cs" />
     <Compile Include="question.cs" />
     <Compile Include="Reponse.cs" />

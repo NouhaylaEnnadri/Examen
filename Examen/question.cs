@@ -11,12 +11,13 @@ namespace Examen
        
         protected string Ques { get; set; } 
         protected int Id { get; set; }
-        private float Note { get; set; }
-
-        public Question (string Ques , int Id)
+        protected float Note { get; set; }
+       
+        public Question (string Ques , int Id , float Note)
         {
             this.Ques = Ques;
             this.Id = Id;   
+            this.Note = Note;   
           
         }
 

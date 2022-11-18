@@ -8,13 +8,14 @@ namespace Examen
 {
     internal class QCM : Question
     {
-        private List<Proposition> propositions = new List<Proposition> ();
-        public QCM(string Ques, int Id) : base(Ques, Id)
+        private List<R_Proposition> propositions = new List<R_Proposition> ();
+        public QCM(string Ques, int Id, float Note) : base(Ques, Id, Note) { }
+        public void AddPropo(string propo)
         {
-            this.Ques = Ques;
-            this.Id = Id;
+            propositions.Add(new R_Proposition(propo));
         }
-       
+
+
 
     }
 }

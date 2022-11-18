@@ -8,13 +8,7 @@ namespace Examen
 {
     internal class Q_ouverte : Question
     {
-        private List<reponse_string> reponse_string = new List<reponse_string>();
-        public Q_ouverte(string Ques, int Id) : base(Ques, Id)
-        {
-            this.Ques = Ques;
-            this.Id = Id;
-        }
-
-
+       
+        public Q_ouverte(string Ques, int Id , float Note) : base(Ques, Id, Note) { }
     }
 }
