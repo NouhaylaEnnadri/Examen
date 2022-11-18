@@ -43,11 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dichotomique.cs" />
     <Compile Include="etudiant.cs" />
     <Compile Include="examen.cs" />
+    <Compile Include="Q_ouverte.cs" />
+    <Compile Include="Proposition.cs" />
+    <Compile Include="QCM.cs" />
     <Compile Include="question.cs" />
     <Compile Include="Reponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reponse_string.cs" />
+    <Compile Include="vrai_faux.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
