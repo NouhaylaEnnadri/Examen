@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace Examen
 {
-    internal class Main
+    internal class etudiant
     {
-        static void Main(string[] args)
-        {
-
-          
-        }
     }
 }
