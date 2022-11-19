@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Examen
 {
-    internal class vrai_faux : Reponse 
+    abstract class  Reponse
     {
+
+        protected Question question; 
+        public Reponse ()
+        {
+
+        }
     }
 }

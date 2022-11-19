@@ -8,7 +8,7 @@ namespace Examen
 {
     internal class Q_Dichotomique :Question
     {
-        private string[] choice = new string[] { "true", "false" };
+        private string[] Choice = new string[] { "true", "false" };
       
         public Q_Dichotomique(string Ques, int Id, float Note) : base(Ques, Id, Note) { }
    
