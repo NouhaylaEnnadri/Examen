@@ -9,9 +9,9 @@ namespace Examen
     internal abstract class  Question
     {
        
-        protected string Ques { get; set; } 
-        protected int Id { get; set; }
-        protected float Note { get; set; }
+        public string Ques { get; set; } 
+        public int Id { get; set; }
+        public float Note { get; set; }
        
         public Question (string Ques , int Id , float Note)
         {

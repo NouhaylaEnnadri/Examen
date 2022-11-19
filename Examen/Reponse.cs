@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Examen
 {
-    class reponse
+    abstract class  Reponse
     {
+
+        protected Question question; 
+        public Reponse ()
+        {
+
+        }
     }
 }
