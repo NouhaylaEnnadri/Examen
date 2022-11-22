@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace Examen
 {
-    internal class R_Proposition
+    internal class R_Proposition : Reponse
     {
-        private string propo;
-
-        public R_Proposition(string propo)
+        private List<Reponse> propositions = new List<Reponse>(); // liste de reponse d'etudaint
+        private Certitude Certitude { get; set; } //Pour les QCM il est possible de demander le degré de certitude
+        private QCM question; 
+        public R_Proposition(List<Reponse> propositions,int id,Question ques) : base(id,ques)
         {
-            this.propo = propo;
+            this.propositions = propositions;
+            
         }
     }
 }

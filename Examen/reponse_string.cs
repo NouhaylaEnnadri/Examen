@@ -10,8 +10,8 @@ namespace Examen
     {
        
         public string response_ouverte { get; set; }
-        Question question; 
-        public  reponse_string(string reponse_ouverte)
+        Q_ouverte question;
+        public  reponse_string(string reponse_ouverte, Q_ouverte question,int id) :base(id,question)
         {
             this.response_ouverte = reponse_ouverte;
 

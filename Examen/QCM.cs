@@ -8,13 +8,37 @@ namespace Examen
 {
     internal class QCM : Question
     {
-        private List<R_Proposition> propositions = new List<R_Proposition> ();
-        public QCM(string Ques, int Id, float Note) : base(Ques, Id, Note) { }
-        public void AddPropo(string propo)
-        {
-            propositions.Add(new R_Proposition(propo));
+
+
+        //liste de reponse d'etudiant (il peut avoir multiple reponse pour une seule question)
+
+        private  List<R_Proposition> propositions = new List<R_Proposition>(); 
+
+        //liste des proposition de question 
+
+        private   string[] proposition;
+
+        //Pour les QCM il est possible de demander le degré de certitude
+        private Certitude Certitude { get; set; }
+
+        public QCM(string Ques, int Id, float Note, string[] proposition, List<R_Proposition> propositions) : base(Ques, Id, Note) {
+
+            proposition = new string[proposition.Length];
+            this.proposition = proposition;
+            this.propositions=propositions; 
+
         }
 
+        //ajouter des nouvelles proposition a la question 
+        public string[] getproposition()
+        {
+            return proposition;
+        }
+        public void setproposition(string[] proposition)
+        {
+            this.proposition = proposition;
+        }
+        
 
 
     }

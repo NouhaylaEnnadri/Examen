@@ -9,18 +9,28 @@ namespace Examen
     internal class etudiant
 
     {
-        public int CIN { get; set; }
+        public string CIN { get; set; }
         public string nom { get; set; }
         public string Prenom { get; set; }
-        private List<Reponse> reponses = new List<Reponse>();
+
+        private Prestation prestation; // La prestation d'un etudiant  qui a passé un examen
 
         public etudiant() { }
-        public etudiant(int id, string nom, string Prenom, List<Reponse> reponses)
+        public etudiant(string CIN, string nom, string Prenom)
         {
             this.CIN = CIN;
             this.nom = nom;
             this.Prenom = Prenom;
-            this.reponses = new List<Reponse>(reponses);
+        }
+
+        public void setprestation(List<Reponse> prestation)
+        {
+            this.prestation = new Prestation(prestation);
+        }
+        public Prestation getprestation()
+        {
+            return prestation;
+
         }
     }
 }

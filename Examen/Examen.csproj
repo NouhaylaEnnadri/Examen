@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="certitude.cs" />
+    <Compile Include="prestation.cs" />
     <Compile Include="Q_dichotomique.cs" />
     <Compile Include="etudiant.cs" />
     <Compile Include="examen.cs" />
