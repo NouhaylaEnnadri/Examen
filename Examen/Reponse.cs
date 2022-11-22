@@ -9,10 +9,15 @@ namespace Examen
     abstract class  Reponse
     {
 
-        protected Question question; 
-        public Reponse ()
-        {
 
+
+        private int id { get; set; } // pour identifier la question 
+        private Question question; 
+   
+        public Reponse (int id , Question question ) 
+        {
+            this.id = id;
+            this.question =  question  ;  
         }
     }
 }
