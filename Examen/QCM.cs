@@ -12,7 +12,7 @@ namespace Examen
 
         //liste de reponse d'etudiant (il peut avoir multiple reponse pour une seule question)
 
-        private  List<R_Proposition> propositions = new List<R_Proposition>(); 
+        private  List<Reponse> propositions = new List<Repnonse>(); 
 
         //liste des proposition de question 
 
